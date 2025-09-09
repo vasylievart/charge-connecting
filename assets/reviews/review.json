@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "review": "It was a great solution for our clients, who always have a necessity to charge their phones.",
+    "venue": "- Bun Bo Vietnam, Barcelona"
+  },
+  {
+      "id": 2,
+      "review": "The charging station was a huge hit with our customers. It's a fantastic feature for any modern cafe.",
+      "venue": "- The Cozy Corner Cafe"
+  },
+  {
+      "id": 3,
+      "review": "We've seen an increase in customer satisfaction since installing the machine. It's a simple, effective service.",
+      "venue": "- Tech Hub Co-Working Space"
+  },
+  {
+      "id": 4,
+      "review": "A very reliable and sleek-looking charger. It fits perfectly with our brand's aesthetic.",
+      "venue": "- Urban Fitness Gym"
+  },
+  {
+      "id": 5,
+      "review": "The product is durable and well-designed. Our guests love the convenience.",
+      "venue": "- City Center Hotel"
+  },
+  {
+      "id": 6,
+      "review": "Installation was a breeze, and the team provided excellent support. Highly recommended.",
+      "venue": "- Happy Coworking Space"
+  }
+]

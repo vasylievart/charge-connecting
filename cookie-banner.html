@@ -1,0 +1,28 @@
+<div id="cookie-banner" style="display:none">
+  <p>
+    Usamos cookies técnicas necesarias para el funcionamiento del sitio. 
+    Puede aceptar todas, rechazarlas o gestionar sus preferencias. 
+    Consulte nuestra <a href="/politica-privacidad" target="_blank">Política de Privacidad</a> 
+    y nuestra <a href="/politica-cookies" target="_blank">Política de Cookies</a>.
+  </p>
+
+  <button class="cookie-btn accept">Aceptar todas</button>
+  <button class="cookie-btn reject">Rechazar todas</button>
+  <button class="cookie-btn manage">Gestionar preferencias</button>
+
+  <!-- Preferences Section (hidden by default) -->
+  <div class="checkboxes" style="display:none; margin-top:10px;">
+    <label>
+      <input id="analytics-checkbox" type="checkbox"> Cookies analíticas
+    </label><br>
+    <label>
+      <input id="marketing-checkbox" type="checkbox"> Cookies de marketing
+    </label><br>
+    <button id="save-preferences">Guardar preferencias</button>
+  </div>
+</div>
+
+<!-- Optional: A settings button (e.g., footer link) -->
+<button id="cookie-settings" style="display:none">⚙️ Configuración de cookies</button>
+
+<script src="/assets/js/cookies.js"></script>

@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phone Charging Locker</title>
+  <link rel="icon" type="image/x-icon" href="/assets/images/charger-icon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./standalone-frontend/style.css">
+  <link rel="stylesheet" href="styles.css" >
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css" >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <script>
+    fetch("cookie-banner.html")
+      .then(res => res.text())
+      .then(html => {
+        document.body.insertAdjacentHTML("beforeend", html);
+
+        const script = document.createElement("script");
+        script.src = "/assets/js/cookies.js"; 
+        document.body.appendChild(script);
+      });
+  </script>
+  
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <img class="logo" src="/assets/new_logo.png" alt="logo">
+      <div class="description">
+        <h1 class="header_title" data-i18n="header_title">Secure Charging Lockers</h1>
+        <p data-i18n="title_description">Perfect for Bars, Pubs, and Restaurants</p>
+      </div>
+      <div class="language-dropdown">
+        <button onclick="toggleDropdown()" class="dropdown-button">
+          <span class="lang_btn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-globe-icon lucide-globe"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg></span>
+          <span class="lang_btn_icon"><img style="width:12px; height: 12px;" src="node_modules/flag-icons/flags/4x3/es.svg" alt="es"></span>
+        </button>
+        <ul id="languageList" class="dropdown-list hidden">
+          <li onclick="changeLanguage('es')">
+            ES
+          </li>
+          <li onclick="changeLanguage('cat')">
+            CAT
+          </li>
+          <li onclick="changeLanguage('en')">
+            EN
+          </li>
+          <li onclick="changeLanguage('fr')">
+            FR
+          </li>
+          <li onclick="changeLanguage('pt')">
+            PT
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div id="product">
+        <div class="container">
+          <div class="item-1 article">
+            <h1 data-i18n="first_title" class="title">Easy to use</h1>
+            <ul class="info__list">
+              <li class="list__item">
+                <span class="check">
+                  <svg xmlns="http://www.w3.org/2000/svg" 
+                    width="24" 
+                    height="24" 
+                    viewBox="0 0 24 24" 
+                    fill="none" 
+                    stroke="currentColor" 
+                    stroke-width="2" 
+                    stroke-linecap="round" 
+                    stroke-linejoin="round" 
+                    class="lucide lucide-circle-check-big-icon lucide-circle-check-big">
+                    <path d="M21.801 10A10 10 0 1 1 17 3.335"/>
+                    <path d="m9 11 3 3L22 4"/>
+                  </svg>
+                </span>
+                <p data-i18n="first_list_item-1" >
+                    Our locker is designed for maximum convenience and ease of use. 
+                </p>
+              </li>
+              <li class="list__item">
+                <span  class="check">
+                  <svg xmlns="http://www.w3.org/2000/svg" 
+                    width="24" 
+                    height="24" 
+                    viewBox="0 0 24 24" 
+                    fill="none" 
+                    stroke="currentColor" 
+                    stroke-width="2" 
+                    stroke-linecap="round" 
+                    stroke-linejoin="round" 
+                    class="lucide lucide-circle-check-big-icon lucide-circle-check-big">
+                    <path d="M21.801 10A10 10 0 1 1 17 3.335"/>
+                    <path d="m9 11 3 3L22 4"/>
+                  </svg>
+                </span>
+                <p data-i18n="first_list_item-2">
+                  With a simple and intuitive interface, all you need is a coin or token to safely store your device.
+                </p> 
+              </li>
+              <li class="list__item">
+                <span  class="check">
+                  <svg xmlns="http://www.w3.org/2000/svg" 
+                    width="24" 
+                    height="24" 
+                    viewBox="0 0 24 24" 
+                    fill="none" 
+                    stroke="currentColor" 
+                    stroke-width="2" 
+                    stroke-linecap="round" 
+                    stroke-linejoin="round" 
+                    class="lucide lucide-circle-check-big-icon lucide-circle-check-big">
+                    <path d="M21.801 10A10 10 0 1 1 17 3.335"/>
+                    <path d="m9 11 3 3L22 4"/>
+                  </svg>
+                </span>
+                <p data-i18n="first_list_item-3">
+                  No apps, no accounts, no hassle: open the locker and you're done in seconds.
+                </p>   
+              </li>
+            </ul>
+          </div>
+          <div class="item-2">
+            <img class="image" src="/assets/fifth_shit.png" alt="phone-charger">
+          </div>
+          <div class="item-3">
+            <img class="image" src="/assets/final_2.png" alt="phone-charger-2">
+          </div>
+          <div class="item-4 article">
+            <h1 data-i18n="second_title" class="title">Fast and safety</h1>
+            <ul class="info__list">
+              <li class="list__item">
+                <span  class="check">
+                  <svg xmlns="http://www.w3.org/2000/svg" 
+                    width="24" 
+                    height="24" 
+                    viewBox="0 0 24 24" 
+                    fill="none" 
+                    stroke="currentColor" 
+                    stroke-width="2" 
+                    stroke-linecap="round" 
+                    stroke-linejoin="round" 
+                    class="lucide lucide-circle-check-big-icon lucide-circle-check-big">
+                    <path d="M21.801 10A10 10 0 1 1 17 3.335"/>
+                    <path d="m9 11 3 3L22 4"/>
+                  </svg>
+                </span>
+                <p data-i18n="first_list_item-4">
+                  Equipped with fast-loading capabilities and manufactured with 22-gauge steel sheet, security key lock, and electrostatic paint.
+                </p>  
+              </li>
+              <li class="list__item">
+                <span  class="check">
+                  <svg xmlns="http://www.w3.org/2000/svg" 
+                    width="24" 
+                    height="24" 
+                    viewBox="0 0 24 24" 
+                    fill="none" 
+                    stroke="currentColor" 
+                    stroke-width="2" 
+                    stroke-linecap="round" 
+                    stroke-linejoin="round" 
+                    class="lucide lucide-circle-check-big-icon lucide-circle-check-big">
+                    <path d="M21.801 10A10 10 0 1 1 17 3.335"/>
+                    <path d="m9 11 3 3L22 4"/>
+                  </svg>
+                </span>
+                <p data-i18n="first_list_item-5">
+                  This locker keeps your device safe and charges it quickly.
+                </p>
+              </li>
+              <li class="list__item">
+                <span  class="check">
+                  <svg xmlns="http://www.w3.org/2000/svg" 
+                    width="24" 
+                    height="24" 
+                    viewBox="0 0 24 24" 
+                    fill="none" 
+                    stroke="currentColor" 
+                    stroke-width="2" 
+                    stroke-linecap="round" 
+                    stroke-linejoin="round" 
+                    class="lucide lucide-circle-check-big-icon lucide-circle-check-big">
+                    <path d="M21.801 10A10 10 0 1 1 17 3.335"/>
+                    <path d="m9 11 3 3L22 4"/>
+                  </svg>
+                </span>
+                <p data-i18n="first_list_item-6">
+                  Whether you're on vacation or traveling, you can trust that your device is protected against theft and ready when you need it.
+                </p>  
+              </li>
+            </ul>
+          <div>
+            <h1 data-i18n="title__fabrica" class="title__fabrica">
+            We are manufacturers and we adapt to your needs.
+            </h1>
+          </div>
+          </div>
+          <div class="video">
+              <h2 data-i18n="product_overview_title">Product Overview</h2>
+              <p data-i18n="product_overview">Metal storage with built-in chargers for all gadgets. Safe and easy charging for your customers.</p>
+              <video controls>
+                <source src="demo.mp4" type="video/mp4">
+                Your browser does not support video.
+              </video>
+          </div>
+          <div class="item-5">
+            <img class="image" src="/assets/new_0.png" alt="small-charger">
+          </div>
+          <div class="item-6 article">
+            <h2 data-i18n="third_title" class="title">Compactness</h2>
+            <p data-i18n="third_description" class="third__description">This compact phone charger locker is the perfect solution for small venues and tight spaces.<br>
+              With 2–3 secure charging compartments, it allows customers to safely lock up their phones and power up while they relax or enjoy their time.<br> 
+              It's incredibly easy to use—just insert a coin, place your device inside, and it starts charging immediately.<br><br>  
+              Despite its small size, this locker is equipped with fast-charging cables for various devices and features solid metal construction for maximum security.<br> 
+              Whether it’s at a bar, café, or event venue, this mini CharPhone station keeps devices safe and fully charged—so users stay connected and stress-free.
+              </p>
+          </div>
+        </div> 
+      </div>
+      <div id="calculator">
+        <div class="calc__container">
+          <div class="calc__title">
+            <h1 class="calc_note" data-i18n="calc__title">
+              We can work hand in hand with our clients to facilitate their requirements.
+            </h1>
+          </div>
+          <div class="calc__image">
+            <img class="image"  src="/assets/calculator_1.png" alt="calculador">
+          </div>
+          <div class="calculator__container">
+            <h2 data-i18n="calculator_title" class="calculator__title">Price Calculator</h2>
+            <div class="hint">
+              <p data-i18n="calc_hint">Here you can calculate your locker price.</p>
+              <p data-i18n="calc_worning" class="note">*Does not inclued customization and shipping</p>
+            </div>
+            <form id="price-form">
+              <label data-i18n="locker_type">Locker Type:</label>
+              <select id="locker-type">
+                <option data-i18n="locker_option_1" value="coin">Coin-operated</option>
+                <option data-i18n="locker_option_2" value="card">Token-operated</option> 
+              </select>
+
+              <label data-i18n="charging_type">Charging Type:</label>
+              <select id="charging-type">
+                <option data-i18n="charging_option_1" value="wired">Wired</option>
+              </select>
+
+              <label data-i18n="shalves_title">Shelves (1-10):</label>
+              <input  type="number" id="shelves" min="1" max="10" value="1">
+
+              <button class="main__button calc" type="submit">
+                <svg 
+                  xmlns="http://www.w3.org/2000/svg" 
+                  width="16" 
+                  height="16" 
+                  viewBox="0 0 24 24" 
+                  fill="none" 
+                  stroke="currentColor" 
+                  stroke-width="2" 
+                  stroke-linecap="round" 
+                  stroke-linejoin="round" 
+                  class="lucide lucide-calculator-icon lucide-calculator">
+                  <rect width="16" height="20" x="4" y="2" rx="2"/>
+                  <line x1="8" x2="16" y1="6" y2="6"/><line x1="16" x2="16" y1="14" y2="18"/>
+                  <path d="M16 10h.01"/><path d="M12 10h.01"/>
+                  <path d="M8 10h.01"/><path d="M12 14h.01"/>
+                  <path d="M8 14h.01"/><path d="M12 18h.01"/>
+                  <path d="M8 18h.01"/>
+                </svg>
+                <span data-i18n="calculator_button">Calculate Price</span>
+              </button>
+            </form>
+            <p data-i18n="total_price" id="price-result">Total Price: €0</p>
+          </div>
+        </div> 
+      </div>
+
+      <div id="contact">
+        <div class="contact__container">
+          <div class="contact__form">
+            <h2 data-i18n="contact_us" class="contact__us">Contact Us</h2>
+            <form id="contact-form">
+              <input type="text" name="name" placeholder="Your Name" required >
+              <input type="email" name="email" placeholder="Your Email" required >
+              <textarea name="message" placeholder="Your Message ..." rows="5" cols="150" required></textarea>
+              <button class="main__button" data-i18n="contact_button" type="submit">Send Message</button>
+            </form>
+          </div>
+          <div class="contact__img">
+            <img class="image"  src="/assets/contact_1.png" alt="contact-us">
+          </div>
+          <div class="status" id="status"></div>
+        </div>
+      </div>
+      <div class="carousel_section">
+        <div class="carousel" tabindex="0">
+          <button class="prev">❮</button>
+          <button class="next">❯</button>
+        </div>
+      </div>  
+  </main>
+  
+  <a 
+    href="https://wa.me/1234567890" 
+    class="whatsapp-float" 
+    target="_blank" 
+    title="Chat with us on WhatsApp">
+    <img src="https://img.icons8.com/ios-filled/50/25D366/whatsapp.png" alt="WhatsApp">
+  </a>
+
+  <div class="chatbox">
+      <div class="chatbox__support">
+          <div class="chatbox__header">
+              <div class="chatbox__image--header">
+                  <img class="chatbot-icon" src="/assets/images/chat-communication-message-talk-svgrepo-com.svg" width="48px" height="48px" alt="image">
+              </div>
+              <div class="chatbox__content--header">
+                  <h4 class="chatbox__heading--header">Chat support</h4>
+                  <p class="chatbox__description--header">Hi. My name is Sam. How can I help you?</p>
+              </div>
+          </div>
+          <div class="chatbox__messages"><div></div></div>
+          <div class="chatbox__footer">
+              <input id="chat-input" type="text" placeholder="Write a message...">
+              <button class="chatbox__send--footer send__button">Send</button>
+          </div>
+      </div>
+      <div class="chatbox__button">
+          <button><img src="./assets/images/chatbox-icon 1.svg" alt="chat-box" style="color: aqua;"></button>
+      </div>
+  </div>
+  
+  <footer>
+    <p data-i18n="footer_text">&copy; 2025 Charging Solutions</p>
+  </footer>
+  
+  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/select.js"></script>
+  <script src="/assets/js/language.js"></script>
+  <script src="./assets/js/newCarusel.js"></script>
+  <script src="./assets/js/app.js"></script>
+  <script src="./assets/js/email.js"></script>
+</body>
+</html>
