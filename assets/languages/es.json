@@ -31,8 +31,15 @@
 "whatsapp_title": "Chatea con nosotros por WhatsApp",
 "start_chat": "Iniciar chat",
 "footer_text": "© Soluciones de carga 2025",
-"cookie": "Usamos cookies para mejorar su experiencia. Consulte nuestra <a href='/politica-privacidad' target='_blank'>Política de Privacidad</a>.",
-"cookie-accept": "Aceptar todo",
-"cookie-reject": "Rechazar",
-"cookie-set": "Administrar preferencias"
+"cookie": "Utilizamos cookies para mejorar tu experiencia. Consulta nuestra <a href='/pages/privacy-policy.es.html' target='_blank'>Política de Privacidad</a> y nuestra <a href='/pages/cookie-policy.es.html' target='_blank'>Política de Cookies</a>",
+"cookie-accept": "Aceptar todas",
+"cookie-reject": "Rechazar las no esenciales",
+"cookie-set": "Administrar preferencias",
+"analytic": "Cookies de análisis",
+"marketing": "Cookies de marketing",
+"ccpa": "No vender mis datos (CCPA)",
+"save": "Guardar preferencias",
+"settings": "Configuración de cookies",
+"footer-pp": "<a href='/pages/privacy-policy.es.html' target='_blank'>Política de Privacidad</a>",
+"footer-cp": "<a href='/pages/cookie-policy.es.html' target='_blank'>Política de Cookies</a>"
 }

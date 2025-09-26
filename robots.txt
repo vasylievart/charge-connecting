@@ -1,0 +1,12 @@
+# robots.txt for Charge Connecting
+# Allow all search engines to crawl the entire site
+User-agent: *
+Allow: /
+
+# Disallow crawling of unnecessary files/folders
+Disallow: /assets/js/
+Disallow: /assets/css/
+Disallow: /node_modules/
+
+# Point to your sitemap
+Sitemap: https://charge-connecting.netlify.app/sitemap.xml

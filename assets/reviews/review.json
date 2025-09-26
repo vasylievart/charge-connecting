@@ -28,5 +28,19 @@
       "id": 6,
       "review": "Installation was a breeze, and the team provided excellent support. Highly recommended.",
       "venue": "- Happy Coworking Space"
+  },
+  {
+      "id": 7,
+      "review": "Installation was a breeze, and the team provided excellent support. Highly recommended.",
+      "venue": "- Happy Coworking Space"
+  },
+  {
+      "id": 8,
+      "review": "Thank you for the good and fast service. We've ordered locker on Monday, and on Thusday evening it was sent.",
+      "venue": "-Jerky Irish Pab, Dublin"
+  },{
+      "id": 9,
+      "review": "For ours clints it was good solution, they can charge their phones during the dinner, even if they have not cables of own charger.",
+      "venue": "-Jerky Irish Pab, Dublin"
   }
 ]

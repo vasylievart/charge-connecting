@@ -1,0 +1,28 @@
+# --- Force HTTPS ---
+http://charge-connecting.netlify.app/* https://charge-connecting.netlify.app/:splat 301!
+
+# --- Redirect www to non-www ---
+https://www.charge-connecting.netlify.app/* https://charge-connecting.netlify.app/:splat 301!
+
+# --- Language fallbacks (default -> English) ---
+/ /en 302
+/index.html /en 302
+
+# --- Privacy Policy language routes ---
+/privacy-policy /en/privacy-policy.en.html 302
+/en/privacy-policy /en/privacy-policy.en.html 302
+/es/privacy-policy /es/privacy-policy.es.html 302
+/ca/privacy-policy /ca/privacy-policy.ca.html 302
+/fr/privacy-policy /fr/privacy-policy.fr.html 302
+/pt/privacy-policy /pt/privacy-policy.pt.html 302
+
+# --- Cookie Policy language routes ---
+/cookie-policy /en/cookie-policy.en.html 302
+/en/cookie-policy /en/cookie-policy.en.html 302
+/es/cookie-policy /es/cookie-policy.es.html 302
+/ca/cookie-policy /ca/cookie-policy.ca.html 302
+/fr/cookie-policy /fr/cookie-policy.fr.html 302
+/pt/cookie-policy /pt/cookie-policy.pt.html 302
+
+# --- Catch-all fallback (send 404 to homepage or a custom page) ---
+/* /index.html 404

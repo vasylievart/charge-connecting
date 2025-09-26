@@ -31,8 +31,16 @@
     "whatsapp_title": "Chat with Us on WhatsApp",
     "start_chat": "Start Chat",
     "footer_text": "© 2025 Charging Solutions",
-    "cookie": "We use cookies to improve your experience. See our <a href='/privacy-policy' target='_blank'>Privacy Policy</a>.",
+    "cookie": "We use cookies to improve your experience. See our <a href='/pages/privacy-policy.en.html' target='_blank'>Privacy Policy</a>  and <a href='/pages/cookie-policy.en.html' target='_blank'>Cookies Policy</a>",
     "cookie-accept": "Accept all",
-    "cookie-reject": "Decline",
-    "cookie-set": "Manage preferences"
+    "cookie-reject": "Reject Non-Essential",
+    "cookie-set": "Manage preferences",
+    "analytic": "Analytics Cookies",
+    "marketing": "Marketing Cookies",
+    "ccpa": "Do Not Sell My Data (CCPA)",
+    "save": "Save Preferences",
+    "settings": "Cookie Settings",
+    "footer-pp": "<a href='/pages/privacy-policy.en.html' target='_blank'>Privacy Policy</a>",
+    "footer-cp": "<a href='/pages/cookie-policy.en.html' target='_blank'>Cookie Policy</a>"
+
 }

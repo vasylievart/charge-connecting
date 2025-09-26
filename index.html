@@ -3,54 +3,75 @@
 <head>
   <meta charset="UTF-8" >
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Phone Charging Locker</title>
-  <link rel="icon" type="image/x-icon" href="/assets/images/charger-icon.ico">
+  <meta property="og:title" content="Charge Connecting - Smart Charging Solutions" />
+  <meta property="og:description" content="Discover smart lockers and charging stations designed for convenience and security." />
+  <meta property="og:url" content="https://charge-connecting.netlify.app/" />
+  <meta property="og:image" content="https://charge-connecting.netlify.app/assets/images/social-preview.png" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Charge Connecting" />
+  <meta name="description" content="Discover smart lockers and charging stations with modern design, flexible payment options, and secure storage. Perfect for gyms, restaurants, bar, pubs and events." />
+
+  <title>Smart Lockers & Charging Stations | Charge Connecting</title>
+
+  <link rel="canonical" href="https://charge-connecting.netlify.app/" />
+  <link rel="alternate" hreflang="en" href="https://charge-connecting.netlify.app/en" />
+  <link rel="alternate" hreflang="es" href="https://charge-connecting.netlify.app/es" />
+  <link rel="alternate" hreflang="ca" href="https://charge-connecting.netlify.app/ca" />
+  <link rel="alternate" hreflang="fr" href="https://charge-connecting.netlify.app/fr" />
+  <link rel="alternate" hreflang="pt" href="https://charge-connecting.netlify.app/pt" />
+
+  <link rel="canonical" href="https://charge-connecting.netlify.app/en/privacy-policy.en.html" />
+  <link rel="alternate" hreflang="en" href="https://charge-connecting.netlify.app/en/privacy-policy.en.html" />
+  <link rel="alternate" hreflang="es" href="https://charge-connecting.netlify.app/es/privacy-policy.es.html" />
+  <link rel="alternate" hreflang="ca" href="https://charge-connecting.netlify.app/ca/privacy-policy.ca.html" />
+  <link rel="alternate" hreflang="fr" href="https://charge-connecting.netlify.app/fr/privacy-policy.fr.html" />
+  <link rel="alternate" hreflang="pt" href="https://charge-connecting.netlify.app/pt/privacy-policy.pt.html" />
+
+  <link rel="canonical" href="https://charge-connecting.netlify.app/en/cookie-policy.en.html" />
+  <link rel="alternate" hreflang="en" href="https://charge-connecting.netlify.app/en/cookie-policy.en.html" />
+  <link rel="alternate" hreflang="es" href="https://charge-connecting.netlify.app/es/cookie-policy.es.html" />
+  <link rel="alternate" hreflang="ca" href="https://charge-connecting.netlify.app/ca/cookie-policy.ca.html" />
+  <link rel="alternate" hreflang="fr" href="https://charge-connecting.netlify.app/fr/cookie-policy.fr.html" />
+  <link rel="alternate" hreflang="pt" href="https://charge-connecting.netlify.app/pt/cookie-policy.pt.html" />
+
+
+
+
+  <link rel="icon" type="image/x-icon" href="/assets/images/favicon-16x16.png">
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./standalone-frontend/style.css">
-  <link rel="stylesheet" href="styles.css" >
+  <link rel="stylesheet" href="/assets/css/chatbot.css">
+  <link rel="stylesheet" href="/assets/css/styles.css" >
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css" >
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <script>
-    fetch("cookie-banner.html")
-      .then(res => res.text())
-      .then(html => {
-        document.body.insertAdjacentHTML("beforeend", html);
-
-        const script = document.createElement("script");
-        script.src = "/assets/js/cookies.js"; 
-        document.body.appendChild(script);
-      });
-  </script>
-  
 </head>
 <body>
   <header>
     <div class="header-container">
-      <img class="logo" src="/assets/new_logo.png" alt="logo">
+      <img class="logo" src="/assets/images/logo.png" alt="Charge Connecting company logo">
       <div class="description">
         <h1 class="header_title" data-i18n="header_title">Secure Charging Lockers</h1>
         <p data-i18n="title_description">Perfect for Bars, Pubs, and Restaurants</p>
       </div>
       <div class="language-dropdown">
-        <button onclick="toggleDropdown()" class="dropdown-button">
+        <button onclick="toggleDropdown()" class="dropdown-button" type="button">
           <span class="lang_btn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-globe-icon lucide-globe"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg></span>
-          <span class="lang_btn_icon"><img style="width:12px; height: 12px;" src="node_modules/flag-icons/flags/4x3/es.svg" alt="es"></span>
         </button>
         <ul id="languageList" class="dropdown-list hidden">
-          <li onclick="changeLanguage('es')">
+          <li lang="es" onclick="changeLanguage('es')">
             ES
           </li>
-          <li onclick="changeLanguage('cat')">
+          <li lang="ca" onclick="changeLanguage('ca')">
             CAT
           </li>
-          <li onclick="changeLanguage('en')">
+          <li lang="en" onclick="changeLanguage('en')">
             EN
           </li>
-          <li onclick="changeLanguage('fr')">
+          <li lang="fr" onclick="changeLanguage('fr')">
             FR
           </li>
-          <li onclick="changeLanguage('pt')">
+          <li lang="pt" onclick="changeLanguage('pt')">
             PT
           </li>
         </ul>
@@ -61,7 +82,7 @@
     <div id="product">
         <div class="container">
           <div class="item-1 article">
-            <h1 data-i18n="first_title" class="title">Easy to use</h1>
+            <h2 data-i18n="first_title" class="title">Easy to use</h2>
             <ul class="info__list">
               <li class="list__item">
                 <span class="check">
@@ -126,13 +147,25 @@
             </ul>
           </div>
           <div class="item-2">
-            <img class="image" src="/assets/fifth_shit.png" alt="phone-charger">
+            <img 
+            class="image" 
+            src="/assets/images/smart-charging-locker-presentation-800-1.webp" 
+            srcset="/assets/images/smart-charging-locker-presentation-400-1.webp 400w, /assets/images/smart-charging-locker-presentation-800-1.webp 800w, /assets/images/smart-charging-locker-presentation-1200-1.webp 1200w"
+            sizes="(max-width: 600px) 400px, (max-width: 1200px) 800px, 1200px"
+            alt="Smart charging locker presentation" 
+            loading="lazy">
           </div>
           <div class="item-3">
-            <img class="image" src="/assets/final_2.png" alt="phone-charger-2">
+            <img 
+            class="image" 
+            src="/assets/images/smart-charging-locker-presentation-800-2.webp" 
+            srcset="/assets/images/smart-charging-locker-presentation-400-2.webp 400w, /assets/images/smart-charging-locker-presentation-800-2.webp 800w, /assets/images/smart-charging-locker-presentation-1200-2.webp 1200w"
+            sizes="(max-width: 600px) 400px, (max-width: 1200px) 800px, 1200px"
+            alt="Smart charging locker presentation" 
+            loading="lazy">
           </div>
           <div class="item-4 article">
-            <h1 data-i18n="second_title" class="title">Fast and safety</h1>
+            <h2 data-i18n="second_title" class="title">Fast and safety</h2>
             <ul class="info__list">
               <li class="list__item">
                 <span  class="check">
@@ -196,9 +229,9 @@
               </li>
             </ul>
           <div>
-            <h1 data-i18n="title__fabrica" class="title__fabrica">
+            <h2 data-i18n="title__fabrica" class="title__fabrica">
             We are manufacturers and we adapt to your needs.
-            </h1>
+            </h2>
           </div>
           </div>
           <div class="video">
@@ -210,7 +243,13 @@
               </video>
           </div>
           <div class="item-5">
-            <img class="image" src="/assets/new_0.png" alt="small-charger">
+            <img 
+            class="image" 
+            src="/assets/images/smart-charging-locker-presentation-800-3.webp" 
+            srcset="/assets/images/smart-charging-locker-presentation-400-3.webp 400w, /assets/images/smart-charging-locker-presentation-800-3.webp 800w, /assets/images/smart-charging-locker-presentation-1200-3.webp 1200w"
+            sizes="(max-width: 600px) 400px, (max-width: 1200px) 800px, 1200px"
+            alt="Smart charging locker presentation" 
+            loading="lazy">
           </div>
           <div class="item-6 article">
             <h2 data-i18n="third_title" class="title">Compactness</h2>
@@ -231,8 +270,15 @@
             </h1>
           </div>
           <div class="calc__image">
-            <img class="image"  src="/assets/calculator_1.png" alt="calculador">
+            <img 
+            class="image" 
+            src="/assets/images/charger-calculator-800.webp" 
+            srcset="/assets/images/charger-calculator-400.webp 400w, /assets/images/charger-calculator-800.webp 800w, /assets/images/charger-calculator-1200.webp 1200w"
+            sizes="(max-width: 600px) 400px, (max-width: 1200px) 800px, 1200px"
+            alt="Price calculator" 
+            loading="lazy">
           </div>
+
           <div class="calculator__container">
             <h2 data-i18n="calculator_title" class="calculator__title">Price Calculator</h2>
             <div class="hint">
@@ -240,39 +286,21 @@
               <p data-i18n="calc_worning" class="note">*Does not inclued customization and shipping</p>
             </div>
             <form id="price-form">
-              <label data-i18n="locker_type">Locker Type:</label>
+              <label for="locker-type" aria-label="Locker Type"  data-i18n="locker_type">Locker Type:</label>
               <select id="locker-type">
-                <option data-i18n="locker_option_1" value="coin">Coin-operated</option>
-                <option data-i18n="locker_option_2" value="card">Token-operated</option> 
+                  <option data-i18n="locker_option_1" value="coin">Coin-operated</option>
+                  <option data-i18n="locker_option_2" value="token">Token-operated</option> 
               </select>
-
-              <label data-i18n="charging_type">Charging Type:</label>
+  
+              <label for="charging-type" aria-label="Charging Type" data-i18n="charging_type">Charging Type:</label>
               <select id="charging-type">
                 <option data-i18n="charging_option_1" value="wired">Wired</option>
               </select>
 
-              <label data-i18n="shalves_title">Shelves (1-10):</label>
+              <label for="shelves" aria-label="Shelves" data-i18n="shalves_title">Shelves (1-10):</label>
               <input  type="number" id="shelves" min="1" max="10" value="1">
 
               <button class="main__button calc" type="submit">
-                <svg 
-                  xmlns="http://www.w3.org/2000/svg" 
-                  width="16" 
-                  height="16" 
-                  viewBox="0 0 24 24" 
-                  fill="none" 
-                  stroke="currentColor" 
-                  stroke-width="2" 
-                  stroke-linecap="round" 
-                  stroke-linejoin="round" 
-                  class="lucide lucide-calculator-icon lucide-calculator">
-                  <rect width="16" height="20" x="4" y="2" rx="2"/>
-                  <line x1="8" x2="16" y1="6" y2="6"/><line x1="16" x2="16" y1="14" y2="18"/>
-                  <path d="M16 10h.01"/><path d="M12 10h.01"/>
-                  <path d="M8 10h.01"/><path d="M12 14h.01"/>
-                  <path d="M8 14h.01"/><path d="M12 18h.01"/>
-                  <path d="M8 18h.01"/>
-                </svg>
                 <span data-i18n="calculator_button">Calculate Price</span>
               </button>
             </form>
@@ -280,20 +308,26 @@
           </div>
         </div> 
       </div>
-
+      
       <div id="contact">
         <div class="contact__container">
           <div class="contact__form">
             <h2 data-i18n="contact_us" class="contact__us">Contact Us</h2>
             <form id="contact-form">
-              <input type="text" name="name" placeholder="Your Name" required >
-              <input type="email" name="email" placeholder="Your Email" required >
+              <input autocomplete="name" type="text" name="name" placeholder="Your Name" required >
+              <input autocomplete="email" type="email" name="email" placeholder="Your Email" required >
               <textarea name="message" placeholder="Your Message ..." rows="5" cols="150" required></textarea>
               <button class="main__button" data-i18n="contact_button" type="submit">Send Message</button>
             </form>
           </div>
           <div class="contact__img">
-            <img class="image"  src="/assets/contact_1.png" alt="contact-us">
+            <img 
+            class="image" 
+            src="/assets/images/contact-us-800.webp" 
+            srcset="/assets/images/contact-us-400.webp 400w, /assets/images/contact-us-800.webp 800w, /assets/images/contact-us-1200.webp 1200w"
+            sizes="(max-width: 600px) 400px, (max-width: 1200px) 800px, 1200px"
+            alt="Contact us form" 
+            loading="lazy">
           </div>
           <div class="status" id="status"></div>
         </div>
@@ -307,7 +341,7 @@
   </main>
   
   <a 
-    href="https://wa.me/1234567890" 
+    href="https://wa.me/+34674586845" 
     class="whatsapp-float" 
     target="_blank" 
     title="Chat with us on WhatsApp">
@@ -335,16 +369,57 @@
           <button><img src="./assets/images/chatbox-icon 1.svg" alt="chat-box" style="color: aqua;"></button>
       </div>
   </div>
-  
-  <footer>
-    <p data-i18n="footer_text">&copy; 2025 Charging Solutions</p>
-  </footer>
-  
+  <div  id="cookie-banner">
+    <p data-i18n="cookie">We use cookies to improve your experience. See our <a href='/privacy-policy' target='_blank'>Privacy Policy</a> and <a href="/cookie-policy.html" target="_blank">Cookies Policy</a></p>
+    <button data-i18n="cookie-accept" class="accept">Accept All</button>
+    <button data-i18n="cookie-reject" class="reject">Reject Non-Essential</button>
+    <button data-i18n="cookie-set" class="manage">Manage Preferences</button>
+    <div class="checkboxes" style="display:none;">
+      <label>
+        <input type="checkbox" id="analytics-checkbox">
+        <span data-i18n="analytic">Analytics Cookies</span>
+      </label>
+      <label>
+        <input type="checkbox" id="marketing-checkbox">
+        <span data-i18n="marketing">Marketing Cookies</span>
+      </label>
+      <label>
+        <input type="checkbox" id="ccpa-checkbox"> 
+        <span data-i18n="ccpa">Do Not Sell My Data (CCPA)</span>
+      </label>
+      <button data-i18n="save" id="save-preferences">Save Preferences</button>
+    </div>
+  </div>
+  <button data-i18n="settings" id="cookie-settings" style="display:none;">Cookie Settings</button>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Charge Connecting",
+      "url": "https://charge-connecting.netlify.app/",
+      "logo": "https://charge-connecting.netlify.app/assets/new_logo.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+34-674-586-845",
+        "contactType": "customer service",
+        "availableLanguage": ["Spanish", "English", "Catalan", "French", "Portuguese"]
+      }
+    }
+  </script>
+  <script src="/assets/js/cookies.js"></script>
+  <script src="/assets/js/chatbot.js"></script>
   <script src="./assets/js/script.js"></script>
   <script src="./assets/js/select.js"></script>
   <script src="/assets/js/language.js"></script>
-  <script src="./assets/js/newCarusel.js"></script>
-  <script src="./assets/js/app.js"></script>
+  <script src="./assets/js/carousel.js"></script>
   <script src="./assets/js/email.js"></script>
+
+  <footer>
+    <span>
+      <p data-i18n="footer_text">&copy; 2025 Charging Solutions</p>
+      <span data-i18n="footer-pp"><a href="/pages/privacy-policy.en.html" target='_blank'>Privacy Policy</a></span>
+      <span data-i18n="footer-cp"><a href="/pages/cookie-policy.en.html" target='_blank'>Cookie Policy</a></span>
+    </span>
+  </footer>
 </body>
 </html>

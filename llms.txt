@@ -1,0 +1,10 @@
+# Allow AI crawlers to use most of the site
+User-Agent: GPTBot
+Allow: /
+
+User-Agent: ClaudeBot
+Allow: /
+
+User-Agent: PerplexityBot
+Allow: /
+
