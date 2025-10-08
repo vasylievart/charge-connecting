@@ -1,0 +1,6 @@
+[build]
+  publish = "out"
+  functions = "netlify/functions"
+
+[build.environment]
+  SECRETS_SCAN_ENABLED = "false"
